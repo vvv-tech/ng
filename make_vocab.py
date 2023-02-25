@@ -5,6 +5,9 @@ import os
 random.seed(17)
 
 def make_vocab(txts_dir):
+    """
+    Function for creating characters vocab from text dir
+    """
     texts_combined = ""
     txts_dir = os.path.join(txts_dir, "*")
     txts_filenames = glob(txts_dir)
